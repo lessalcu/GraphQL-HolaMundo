@@ -1,14 +1,14 @@
 # GraphQL Hello World - Node.js
 
-Este es un proyecto de **"Hola Mundo"** utilizando **GraphQL** con **Express.js** y **Node.js**. La API expone una ruta `/graphql` para ejecutar consultas **GraphQL** y responder con un mensaje "Hello World with GraphQL".
+This is a **"Hello World"** project using **GraphQL** with **Express.js** and **Node.js**. The API exposes a `/graphql` route to run **GraphQL** queries and responds with a "Hello World with GraphQL" message.
 
-## Características
+## Features
 
-- Arquitectura basada en **GraphQL**.
-- Responde a la consulta `hello` en la ruta `/graphql`.
-- Documentación de la API generada automáticamente con **Swagger UI**.
+- **GraphQL** based architecture.
+- Responds to `hello` query on `/graphql` route.
+- Automatically generated API documentation with **Swagger UI**.
 
-## Requisitos
+##Requirements
 
 - Node.js
 - Express
@@ -17,70 +17,70 @@ Este es un proyecto de **"Hola Mundo"** utilizando **GraphQL** con **Express.js*
 - Swagger-UI-Express
 - Swagger-JSDoc
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/lessalcu/GraphQL-HolaMundo.git
-   cd graphql-hello-world-node
-   ```
+1. Clone the repository:
+```tap
+git clone https://github.com/lessalcu/GraphQL-HelloWorld.git
+cd graphql-hello-world-node
+```
 
-2. Instala las dependencias:
-   ```bash
-   npm install
-   ```
+2. Install the dependencies:
+```tap
+npm install
+```
 
-3. Ejecuta la aplicación:
-   ```bash
-   node index.js
-   ```
+3. Run the application:
+```tap
+node index.js
+```
 
-4. Abre Swagger UI para consultar la documentación:
-   - Accede a [http://localhost:4000/api-docs](http://localhost:4000/api-docs)
+4. Open Swagger UI to consult the documentation:
+- Access [http://localhost:4000/api-docs](http://localhost:4000/api-docs)
 
 ## Docker
 
-### Construcción de la imagen Docker
+### Building the image Docker
 
-1. Construye la imagen Docker:
-   ```bash
-   docker build -t hello-world-graphql .
-   ```
+1. Build the Docker image:
+``bash
+docker build -t hello-world-graphql .
+```
 
-2. Ejecuta el contenedor Docker:
-   ```bash
-   docker run -p 4000:4000 --name hello-world-graphql-container hello-world-graphql
-   ```
+2. Run the Docker container:
+```tap
+docker run -p 4000:4000 --name hello-world-graphql-container hello-world-graphql
+```
 
-3. Accede a la API:
-   - Swagger: [http://localhost:4000/api-docs](http://localhost:4000/api-docs)
-   - GraphQL: Realiza consultas en [http://localhost:4000/graphql](http://localhost:4000/graphql)
+3. Access the API:
+- Arrogance: [http://localhost:4000/api-docs](http://localhost:4000/api-docs)
+- GraphQL: Queries [http://localhost:4000/graphql](http://localhost:4000/graphql)
 
-### Subir la imagen a Docker Hub
+### Push the image to Docker Hub
 
-1. Inicia sesión en Docker Hub:
-   ```bash
-   docker login
-   ```
+1. Log in to Docker Hub:
+```tap
+login to docker
+```
 
-2. Etiqueta tu imagen:
-   ```bash
-   docker tag hello-world-graphql lssalas/hello-world-graphql:latest
-   ```
+2. Tag your image:
+```tap
+tag docker hello-world-graphql lssalas/hello-world-graphql:latest
+```
 
-3. Sube la imagen:
-   ```bash
-   docker push lssalas/hello-world-graphql:latest
-   ```
+3. Upload the image:
+```tap
+docker push lssalas/hello-world-graphql:last
+```
 
-### Descargar la imagen desde Docker Hub
+### Download the image from Docker Hub
 
-1. Para descargar la imagen desde Docker Hub:
-   ```bash
-   docker pull lssalas/hello-world-graphql:latest
-   ```
+1. To download the image from Docker Hub:
+```tap
+docker pull lssalas/hello-world-graphql:last
+```
 
-## Notas
+## Notes
 
-Este proyecto sirve como ejemplo básico para entender la implementación de una API **GraphQL** en Node.js con Express.
+This project serves as a basic example to understand the implementation of a **GraphQL** API in Node.js with Express.
 ```
