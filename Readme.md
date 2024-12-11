@@ -1,4 +1,3 @@
-```markdown
 # GraphQL Hello World - Node.js
 
 Este es un proyecto de **"Hola Mundo"** utilizando **GraphQL** con **Express.js** y **Node.js**. La API expone una ruta `/graphql` para ejecutar consultas **GraphQL** y responder con un mensaje "Hello World with GraphQL".
